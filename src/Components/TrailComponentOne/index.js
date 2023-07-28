@@ -60,9 +60,9 @@ class TrailComponentOne extends Component{
         <h1>{count} {years}  {experience}</h1>
         
         <div className='marquee'>
-          <p className='content'>I had successfully published my code. I had successfully published my code.I had successfully published my code.I had successfully published my code.I had successfully published my code</p>
-          <p className='content'>I had successfully published my code. I had successfully published my code.I had successfully published my code.I had successfully published my code.I had successfully published my code</p>
-          <p className='content'>I had successfully published my code. I had successfully published my code.I had successfully published my code.I had successfully published my code.I had successfully published my code</p>
+          <p className='content'>I had successfully published my code. </p>
+          <p className='content'>I had successfully published my code.</p>
+          <p className='content'>I had successfully published my code. </p>
         </div>
         <button type='button' onClick={this.setStates}>reset</button>
     </div>
