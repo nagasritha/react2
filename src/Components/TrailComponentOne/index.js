@@ -44,6 +44,10 @@ class TrailComponentOne extends Component{
          return clearInterval(interval3)
         }return this.setState(prev=>({experience:prev.experience+1}))
     }
+
+    setStates=()=>{
+        this.setState({count:0,years:0,experience:0})
+    }
    
     render(){
         const {count,years,experience}=this.state
@@ -54,6 +58,7 @@ class TrailComponentOne extends Component{
         <Image/>
         <Image2/>
         <h1>{count} {years}  {experience}</h1>
+        <button type='button' onClick={this.setStates}>reset</button>
     </div>
 )
         }
