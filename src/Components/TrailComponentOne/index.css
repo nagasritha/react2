@@ -1,0 +1,20 @@
+.marquee{
+    width:100px;
+    height:40px;
+    display:flex;
+    
+}
+.content{
+    animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+    0%{transform:translateX(100%)};
+    100%{
+        transform:translateX(-100%)
+    }
+}
+button{
+    margin:10px;
+    position:fixed;
+    top:140px;
+}
