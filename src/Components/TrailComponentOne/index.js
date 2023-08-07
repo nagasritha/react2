@@ -1,10 +1,12 @@
 import {Component} from 'react'
+import {BsFill1CircleFill} from 'react-icons/bs'
 import Image from '../Image'
 import Image2 from '../Image2'
 import './index.css'
 
 let interval1=null
 let interval2=null
+let interval3=null
 class TrailComponentOne extends Component{
     state={
         count:0,
@@ -35,7 +37,12 @@ class TrailComponentOne extends Component{
         }return this.setState(prev=>({years:prev.years+1}))
     }
 
- 
+    changeExperience=()=>{
+        const {experience}=this.state
+        if(experience===5){
+         return clearInterval(interval3)
+        }return this.setState(prev=>({experience:prev.experience+1}))
+    }
 
     setStates=()=>{
         this.setState({count:0,years:0,experience:0})
@@ -50,7 +57,7 @@ class TrailComponentOne extends Component{
         <Image/>
         <Image2/>
         <h1>{count} {years}  {experience}</h1>
-        
+        <BsFill1CircleFill/>
         <div className='marquee'>
           <p className='content'>I had successfully published my code. </p>
           <p className='content'>I had successfully published my code.</p>
