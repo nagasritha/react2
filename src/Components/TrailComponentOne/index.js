@@ -3,6 +3,8 @@ import {BiLogoTwitter,BiSolidLocationPlus} from 'react-icons/bi'
 import {AiOutlineInstagram,AiTwotoneMail} from 'react-icons/ai'
 import {BsWhatsapp,BsFacebook,BsLinkedin,BsYoutube,} from 'react-icons/bs'
 import {CiCircleRemove} from 'react-icons/ci'
+import {RxCross2} from 'react-icons/rx'
+import {RiArrowDropUpLine,RiArrowDropDownLine} from 'react-icons/ri'
 import Image from '../Image'
 import Image2 from '../Image2'
 import './index.css'
@@ -69,6 +71,9 @@ class TrailComponentOne extends Component{
             <AiTwotoneMail style={{fontSize:'25px', marginRight:'10px'}}/>
             <BiSolidLocationPlus/>
             <CiCircleRemove/>
+            <RxCross2/>
+            <RiArrowDropUpLine/>
+            <RiArrowDropDownLine/>
         <div className='marquee'>
           <p className='content'>I had successfully published my code. </p>
           <p className='content'>I had successfully published my code.</p>
