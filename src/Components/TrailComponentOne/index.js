@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import React, { useState, useEffect } from 'react';
 import {BiLogoTwitter,BiSolidLocationPlus} from 'react-icons/bi'
 import {AiOutlineInstagram,AiTwotoneMail} from 'react-icons/ai'
 import {BsWhatsapp,BsFacebook,BsLinkedin,BsYoutube,} from 'react-icons/bs'
@@ -12,6 +13,14 @@ import './index.css'
 let interval1=null
 let interval2=null
 let interval3=null
+
+const Icons=()=>{
+    const [isAnimating, setIsAnimating] = useState(true);
+    const onCli=()=>{
+        setIsAnimating(false)
+    }
+    return <button>change Mode</button>
+}
 class TrailComponentOne extends Component{
     state={
         count:0,
@@ -79,6 +88,7 @@ class TrailComponentOne extends Component{
           <p className='content'>I had successfully published my code.</p>
           <p className='content'>I had successfully published my code. </p>
         </div>
+        <Icons/>
         <button type='button' onClick={this.setStates} className='animations'>reset</button>
     </div>
 )
