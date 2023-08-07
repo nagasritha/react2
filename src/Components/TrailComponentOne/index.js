@@ -1,7 +1,7 @@
 import {Component} from 'react'
-import {BsFacebook,BsWhatsapp,BsTwitter,BsLinkedin} from 'react-icons/bs'
-import {AiOutlineRight} from 'react-icons/ai'
-import {BiSolidPhoneCall} from 'react-icons/bi'
+import {BiLogoTwitter,BiSolidLocationPlus} from 'react-icons/bi'
+import {AiOutlineInstagram,AiTwotoneMail} from 'react-icons/ai'
+import {BsWhatsapp,BsFacebook,BsLinkedin,BsYoutube,} from 'react-icons/bs'
 import Image from '../Image'
 import Image2 from '../Image2'
 import './index.css'
@@ -59,12 +59,14 @@ class TrailComponentOne extends Component{
         <Image/>
         <Image2/>
         <h1>{count} {years}  {experience}</h1>
-        <BsFacebook/>
-        <BsWhatsapp/>
-        <BsTwitter/>
-        <BsLinkedin/>
-        <AiOutlineRight/>
-        <BiSolidPhoneCall/>
+        <BsFacebook style={{fontSize:'25px' ,marginRight:'10px'}}/>
+            <BiLogoTwitter style={{fontSize:'25px', marginRight:'10px'}}/>
+            <AiOutlineInstagram style={{fontSize:'25px', marginRight:'10px'}}/>
+            <BsLinkedin style={{fontSize:'25px', marginRight:'10px'}}/>
+            <BsYoutube style={{fontSize:'25px', marginRight:'10px'}}/>
+            <BsWhatsapp style={{fontSize:'25px', marginRight:'10px'}}/>
+            <AiTwotoneMail style={{fontSize:'25px', marginRight:'10px'}}/>
+            <BiSolidLocationPlus/>
         <div className='marquee'>
           <p className='content'>I had successfully published my code. </p>
           <p className='content'>I had successfully published my code.</p>
