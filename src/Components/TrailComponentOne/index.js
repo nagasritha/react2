@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import {BsFill1CircleFill} from 'react-icons/bs'
+import {BsFacebook,BsWhatsapp,BsTwitter,BsLinkedin} from 'react-icons/bs'
 import Image from '../Image'
 import Image2 from '../Image2'
 import './index.css'
@@ -57,7 +57,10 @@ class TrailComponentOne extends Component{
         <Image/>
         <Image2/>
         <h1>{count} {years}  {experience}</h1>
-        <BsFill1CircleFill/>
+        <BsFacebook/>
+        <BsWhatsapp/>
+        <BsTwitter/>
+        <BsLinkedin/>
         <div className='marquee'>
           <p className='content'>I had successfully published my code. </p>
           <p className='content'>I had successfully published my code.</p>
