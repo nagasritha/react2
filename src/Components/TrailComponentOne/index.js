@@ -1,4 +1,11 @@
 import {Component} from 'react'
+import {BiLogoTwitter} from 'react-icons/bi'
+import {CiFacebook} from 'react-icons/ci'
+import {AiOutlineInstagram} from 'react-icons/ai'
+import {GrLinkedinOption,GrMail} from 'react-icons/gr'
+import {SlSocialYoutube} from 'react-icons/sl'
+import {BsWhatsapp} from 'react-icons/bs'
+import {ImLocation} from 'react-icons/im'
 import Image from '../Image'
 import Image2 from '../Image2'
 import './index.css'
@@ -64,7 +71,14 @@ class TrailComponentOne extends Component{
           <p className='content'>I had successfully published my code.</p>
           <p className='content'>I had successfully published my code. </p>
         </div>
-        <button type='button' onClick={this.setStates}>reset</button>
+           <CiFacebook style={{fontSize:'25px' ,marginRight:'10px'}}/>
+            <BiLogoTwitter style={{fontSize:'25px', marginRight:'10px'}}/>
+            <AiOutlineInstagram style={{fontSize:'25px', marginRight:'10px'}}/>
+            <GrLinkedinOption style={{fontSize:'25px', marginRight:'10px'}}/>
+            <SlSocialYoutube style={{fontSize:'25px', marginRight:'10px'}}/>
+            <BsWhatsapp style={{fontSize:'25px', marginRight:'10px'}}/>
+            <GrMail style={{fontSize:'25px', marginRight:'10px'}}/>
+        <button type='button' onClick={this.setStates} className='animations'>reset</button>
     </div>
 )
         }
