@@ -1,23 +1,14 @@
 import {Component} from 'react'
-import {BiLogoTwitter} from 'react-icons/bi'
-import {CiFacebook} from 'react-icons/ci'
-import {AiOutlineInstagram} from 'react-icons/ai'
-import {GrLinkedinOption,GrMail} from 'react-icons/gr'
-import {SlSocialYoutube} from 'react-icons/sl'
-import {BsWhatsapp} from 'react-icons/bs'
-import {ImLocation} from 'react-icons/im'
 import Image from '../Image'
 import Image2 from '../Image2'
 import './index.css'
 
 let interval1=null
 let interval2=null
-let interval3=null
 class TrailComponentOne extends Component{
     state={
         count:0,
         years:0,
-        experience:0
     }
 
     componentDidMount(){
@@ -27,7 +18,6 @@ class TrailComponentOne extends Component{
     IncreaseCount=()=>{
         interval1=setInterval(this.changeCount,20)
         interval2=setInterval(this.changeYears,100)
-        interval3=setInterval(this.changeExperience,100)
         
     }
 
@@ -45,12 +35,7 @@ class TrailComponentOne extends Component{
         }return this.setState(prev=>({years:prev.years+1}))
     }
 
-    changeExperience=()=>{
-        const {experience}=this.state
-        if(experience===5){
-         return clearInterval(interval3)
-        }return this.setState(prev=>({experience:prev.experience+1}))
-    }
+ 
 
     setStates=()=>{
         this.setState({count:0,years:0,experience:0})
@@ -71,13 +56,6 @@ class TrailComponentOne extends Component{
           <p className='content'>I had successfully published my code.</p>
           <p className='content'>I had successfully published my code. </p>
         </div>
-           <CiFacebook style={{fontSize:'25px' ,marginRight:'10px'}}/>
-            <BiLogoTwitter style={{fontSize:'25px', marginRight:'10px'}}/>
-            <AiOutlineInstagram style={{fontSize:'25px', marginRight:'10px'}}/>
-            <GrLinkedinOption style={{fontSize:'25px', marginRight:'10px'}}/>
-            <SlSocialYoutube style={{fontSize:'25px', marginRight:'10px'}}/>
-            <BsWhatsapp style={{fontSize:'25px', marginRight:'10px'}}/>
-            <GrMail style={{fontSize:'25px', marginRight:'10px'}}/>
         <button type='button' onClick={this.setStates} className='animations'>reset</button>
     </div>
 )
