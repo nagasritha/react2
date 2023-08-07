@@ -2,6 +2,7 @@ import {Component} from 'react'
 import {BiLogoTwitter,BiSolidLocationPlus} from 'react-icons/bi'
 import {AiOutlineInstagram,AiTwotoneMail} from 'react-icons/ai'
 import {BsWhatsapp,BsFacebook,BsLinkedin,BsYoutube,} from 'react-icons/bs'
+import {CiCircleRemove} from 'react-icons/ci'
 import Image from '../Image'
 import Image2 from '../Image2'
 import './index.css'
@@ -67,6 +68,7 @@ class TrailComponentOne extends Component{
             <BsWhatsapp style={{fontSize:'25px', marginRight:'10px'}}/>
             <AiTwotoneMail style={{fontSize:'25px', marginRight:'10px'}}/>
             <BiSolidLocationPlus/>
+            <CiCircleRemove/>
         <div className='marquee'>
           <p className='content'>I had successfully published my code. </p>
           <p className='content'>I had successfully published my code.</p>
