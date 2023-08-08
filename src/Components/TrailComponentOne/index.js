@@ -59,7 +59,6 @@ class TrailComponentOne extends Component{
     <div>
         <h1>Hello world</h1>
         <p>I had successfully published my code</p>
-        <Image/>
         <Image2/>
         <h1>{count} {years}  {experience}</h1>
         <BsFacebook style={{fontSize:'25px' ,marginRight:'10px'}}/>

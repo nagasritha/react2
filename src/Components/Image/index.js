@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './index.css';
 
 const AnimatedParagraph = (props) => {
-  const { text } = props;
+  const text='I am hear';
   const [displayText, setDisplayText] = useState([]);
   const [isAnimatin, setIsAnimating] = useState(true);
 
