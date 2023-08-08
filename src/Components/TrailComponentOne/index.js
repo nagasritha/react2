@@ -1,26 +1,17 @@
 import {Component} from 'react'
-import React, { useState, useEffect } from 'react';
 import {BiLogoTwitter,BiSolidLocationPlus} from 'react-icons/bi'
 import {AiOutlineInstagram,AiTwotoneMail} from 'react-icons/ai'
 import {BsWhatsapp,BsFacebook,BsLinkedin,BsYoutube,} from 'react-icons/bs'
 import {CiCircleRemove} from 'react-icons/ci'
 import {RxCross2} from 'react-icons/rx'
 import {RiArrowDropUpLine,RiArrowDropDownLine} from 'react-icons/ri'
-import Image from '../Image'
+import AnimatedParagraph from '../Image'
 import Image2 from '../Image2'
 import './index.css'
 
 let interval1=null
 let interval2=null
 let interval3=null
-
-const Icons=()=>{
-    const [isAnimating, setIsAnimating] = useState(true);
-    const onCli=()=>{
-        setIsAnimating(false)
-    }
-    return <button>change Mode</button>
-}
 class TrailComponentOne extends Component{
     state={
         count:0,
@@ -88,8 +79,13 @@ class TrailComponentOne extends Component{
           <p className='content'>I had successfully published my code.</p>
           <p className='content'>I had successfully published my code. </p>
         </div>
-        <Icons/>
+        <AnimatedParagraph/>
         <button type='button' onClick={this.setStates} className='animations'>reset</button>
+        <div className='trail'>
+            <img src='https://res.cloudinary.com/dwoqcvsxt/image/upload/v1657980420/bg-cloths2_yhi0qp.png' alt='trail' className='display'/>
+            <img src='https://res.cloudinary.com/dwoqcvsxt/image/upload/v1657440128/Screenshot_3_bmascz.png' alt='trail2' className='hide'/>
+        </div>
+       <p className='zoom-in-out-box'>Add feature</p>
     </div>
 )
         }
