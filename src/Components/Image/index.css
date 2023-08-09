@@ -31,3 +31,89 @@
       width: 0;
     }
   }
+  body{
+    min-height:100vh;
+    place-items:center;
+  }
+  .slider{
+    height:250px;
+    margin:auto;
+    position:relative;
+    width:90%;
+    display:grid;
+    place-items:center;
+    
+  }
+  .slider-track{
+    display:flex;
+    width:calc(250px * 12);
+    animation:scroll 10s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0%{
+      transform:translateX(0);
+    }
+    100%{
+      transform:translateX(calc(-250*6));
+    }
+  }
+
+  .slide{
+    height:200;
+    width:50px;
+    display:flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+  }
+  img{
+    width:100%;
+    
+  }
+
+  img:hover{
+    transform: scaleY(2)
+  }
+ 
+  .slider::before,
+  .slider::after{
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    content: '';
+    height: 100%;
+    position:absolute;
+    width:15%;
+    z-index: 2;
+  }
+  .slider::after{
+    top:0;
+    right:0;
+    transform: rotateZ(180deg);
+  }
+  .slider::before{
+    top:0;
+    left:0;
+  }
+  .bg{
+    background-color: aquamarine;
+    width:calc(100*6)px;
+
+  }
+  .scroll{
+    display:flex;
+    animation:scroll 10s infinite;
+    width:calc(100*6)px;
+   justify-content: center;
+  }
+  .item{
+    width:100px;
+  }
+
+  @keyframes scroll {
+    0%{
+      transform: translateX(0px);
+    }
+    100%{
+      transform :translateX(-200px);
+    }
+  }

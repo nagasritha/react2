@@ -5,7 +5,7 @@ import {BsWhatsapp,BsFacebook,BsLinkedin,BsYoutube,} from 'react-icons/bs'
 import {CiCircleRemove} from 'react-icons/ci'
 import {RxCross2} from 'react-icons/rx'
 import {RiArrowDropUpLine,RiArrowDropDownLine} from 'react-icons/ri'
-import AnimatedParagraph from '../Image'
+import  Image from '../Image'
 import Image2 from '../Image2'
 import './index.css'
 
@@ -78,7 +78,7 @@ class TrailComponentOne extends Component{
           <p className='content'>I had successfully published my code.</p>
           <p className='content'>I had successfully published my code. </p>
         </div>
-        <AnimatedParagraph/>
+        <Image/>
         <button type='button' onClick={this.setStates} className='animations'>reset</button>
         <div className='trail'>
             <img src='https://res.cloudinary.com/dwoqcvsxt/image/upload/v1657980420/bg-cloths2_yhi0qp.png' alt='trail' className='display'/>
